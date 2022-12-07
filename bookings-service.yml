@@ -1,9 +1,9 @@
 spring:
   application:
-    name: product-service
+    name: bookings-service
   profiles:
     active: dev
 server:
   servlet:
-    context-path: /store/api/v1
+    context-path: /bookmovies/api/v1
   port: 9050
