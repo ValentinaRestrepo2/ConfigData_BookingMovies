@@ -6,7 +6,7 @@ spring:
 server:
   servlet:
     context-path: /bookmovies/api/v1
-  port: 9050
+  port: 9080
 eureka:
   client:
     serviceUrl:
