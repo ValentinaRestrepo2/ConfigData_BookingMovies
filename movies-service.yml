@@ -3,6 +3,12 @@ spring:
     name: movies-service
   profiles:
     active: dev
+  boot:
+    admin:
+      client:
+        url: http://localhost:9020
+        instance:
+          name: Movies API Service
 server:
   servlet:
     context-path: /bookmovies/api/v1
@@ -10,4 +16,12 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http:localhost:9010/eureka
+      defaultZone: http://localhost:9010/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
