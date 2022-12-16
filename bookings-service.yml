@@ -1,14 +1,14 @@
 spring:
   application:
     name: bookings-service
-   profiles:
+  profiles:
     active: dev
   boot:
     admin:
       client:
         url: http://localhost:9020
         instance:
-          name: Booking API Service
+          name: Bookings API Service
 server:
   servlet:
     context-path: /bookmovies/api/v1
@@ -33,10 +33,4 @@ management:
   endpoint:
     health:
       show-details: ALWAYS
-feign:
-  circuitbreaker:
-    enabled: true
-  client:
-    config:
-      default:
-        connectTimeout: 5000
+
